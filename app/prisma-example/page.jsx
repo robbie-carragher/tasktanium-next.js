@@ -32,12 +32,13 @@
 // };
 // export default PrismaExample;
 
-// app/tasks/page.jsx
-import React, { useEffect, useState } from 'react';
-import prisma from '@/utils/db';
-import TaskList from '@/components/TaskList';
+"use client";
 
-const prismaHandlers = async () => {
+import React, { useEffect, useState } from 'react';
+import TaskList from '@/components/TaskList';
+import prisma from '@/utils/db';
+
+const fetchTasks = async () => {
   return prisma.task.findMany();
 };
 
@@ -45,12 +46,12 @@ const PrismaExample = () => {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    const fetchTasks = async () => {
-      const fetchedTasks = await prismaHandlers();
+    const getTasks = async () => {
+      const fetchedTasks = await fetchTasks();
       setTasks(fetchedTasks);
     };
 
-    fetchTasks();
+    getTasks();
   }, []);
 
   if (tasks.length === 0) {

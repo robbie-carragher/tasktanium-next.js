@@ -1,10 +1,11 @@
 import Link from 'next/link';
 
 const links = [
-  { href: '/client', label: 'client' },
-  { href: '/drinks', label: 'drinks' },
+  { href: '/tasks', label: 'tasks' },
+  // { href: '/client', label: 'client' },
+  // { href: '/drinks', label: 'drinks' },
   { href: '/prisma-example', label: 'prisma' },
-  { href: '/tasks', label: 'tasks' }
+  // { href: '/tasks', label: 'tasks' }
 ];
 
 const Navbar = () => {
@@ -13,7 +14,7 @@ const Navbar = () => {
       <div className='navbar px-8 max-w-6xl mx-auto flex-col sm:flex-row'>
         <li>
           <Link href='/' className='btn btn-primary'>
-            Next.js
+            Tasktanium
           </Link>
         </li>
         <ul className='menu menu-horizontal md:ml-8'>

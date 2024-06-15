@@ -1,16 +1,13 @@
-'use client'
-import { Toaster } from 'react-hot-toast'
+'use client';
 
-import React from 'react'
+import { Toaster } from 'react-hot-toast';
 
-const Providers = ({children}) => {
+const Providers = ({ children }) => {
   return (
     <>
-    <Toaster />
-    {children}
-    
+      <Toaster />
+      {children}
     </>
-  )
-}
-
-export default Providers
+  );
+};
+export default Providers;

@@ -5,7 +5,7 @@ import Providers from './providers';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Next.js Tutorial',
+  title: 'Tasktanium',
   description: 'Build awesome stuff with Next.js',
 };
 

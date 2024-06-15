@@ -35,7 +35,6 @@ const TaskForm = () => {
   }, [state]);
   return (
     <form action={formAction}>
-      {/* {state.message ? <p className='mb-2'>{state.message}</p> : null} */}
       <div className='join w-full'>
         <input
           type='text '

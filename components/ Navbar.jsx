@@ -2,10 +2,10 @@ import Link from 'next/link';
 
 const links = [
   { href: '/tasks', label: 'tasks' },
-  // { href: '/client', label: 'client' },
-  // { href: '/drinks', label: 'drinks' },
+  { href: '/client', label: 'client' },
+  { href: '/drinks', label: 'drinks' },
   { href: '/prisma-example', label: 'prisma' },
-  // { href: '/tasks', label: 'tasks' }
+  { href: '/tasks', label: 'tasks' }
 ];
 
 const Navbar = () => {

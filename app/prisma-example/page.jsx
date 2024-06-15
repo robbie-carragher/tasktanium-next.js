@@ -1,14 +1,13 @@
 import prisma from '@/utils/db';
-import TaskList from '@/components/TaskList';
 
 const prismaHandlers = async () => {
   console.log('prisma example');
-  // await prisma.task.create({
-  //   data: {
-  //     content: 'wake up',
-  //   },
-  // });
-  return prisma.task.findMany();
+  const allTasks = await prisma.task.findMany({
+    orderBy: {
+      createdAt: 'desc',
+    },
+  });
+  return allTasks;
 };
 
 const PrismaExample = async () => {

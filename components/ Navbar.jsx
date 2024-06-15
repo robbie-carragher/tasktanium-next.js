@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const links = [
   { href: '/tasks', label: 'tasks' },
-  { href: '/prisma-example', label: 'All Tasks' },
+  // { href: '/prisma-example', label: 'All Tasks' },
 ];
 
 const Navbar = () => {
